@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Lab5</title> 
+</head>
+<body>
+    <script>
+        function tree(n){
+            printTreeTop(n);
+            printTreeBottom(n);
+        }
+        function printTreeBottom(n){
+            let spaces = repeatchar(n - 1,' ');
+            console.log(spaces + '*');
+            console.log(spaces + '*');
+            console.log(spaces + '*');
+        }
+
+        function repeatchar(n, arg_char){
+            let str = '';
+            for(let i = 0; i < n; i++){
+                str += arg_char;
+            }
+            return str;
+        }
+
+        tree(5)
+        </script>
+    </body>
+    </html>
