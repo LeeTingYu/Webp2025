@@ -1,12 +1,10 @@
 import React from 'react';
-import HelloCGU from './hello_cgu' ;
-import MultiButton from './cgu_multiButton';
+import CGULogin from './cgu_login';
 
 function App() {
   return (
     <div className="App">
-      <HelloCGU />
-      {MultiButton()}
+      <CGULogin />
     </div>
   );
 }
